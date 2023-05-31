@@ -58,6 +58,8 @@ class challenge{
             if(CURRENT_QUANTITY > litterCounter){
                 litterCounter++;
                 priceCounter = priceCounter + priceArray.get(i);
+            }else{
+                break;
             }
         }
         System.out.println("Current value: "+ Math.round(priceCounter * 100.0) / 100.0);
